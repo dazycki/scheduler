@@ -15,7 +15,6 @@ export default function Form(props) {
   const cancel = function () {
     reset();
     onCancel();
-    window.location.reload();
   };
   function validate() {
     if (student === "") {

@@ -37,10 +37,6 @@ export default function useApplicationData() {
       ...state.appointments,
       [id]: appointment,
     };
-    setState({
-      ...state,
-      appointments,
-    });
 
     let days = state.days;
 
