@@ -15,6 +15,7 @@ export default function Form(props) {
   const cancel = function () {
     reset();
     onCancel();
+    window.location.reload();
   };
   function validate() {
     if (student === "") {
@@ -54,7 +55,7 @@ export default function Form(props) {
       </section>
       <section className="appointment__card-right">
         <section className="appointment__actions">
-          <Button danger onClick={cancel}>
+          <Button danger onClick={() => cancel()}>
             Cancel
           </Button>
           <Button confirm onClick={() => validate()}>
